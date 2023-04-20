@@ -1,0 +1,48 @@
+body {
+    display: block;
+    font-family: Papyrus, fantasy;
+}
+
+nav {
+    background: linear-gradient(To bottom, rgb(219, 12, 219), rgb(150, 71, 150), rgb(94, 74, 94));
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    margin: 0 10px;
+}
+nav a {
+    display: block;
+    color: #1ed1b3;
+    font-size: 50px;
+    padding: 14px 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: yellow;
+    transform:scale(1.2)
+}
+
+h1, h2, h3 {
+    padding-left: 20px;
+}
+
+h2, h3 {
+    font-style: italic;
+}
+
+p {
+    text-indent: 20px;
+    padding-left: 20px;
+}
