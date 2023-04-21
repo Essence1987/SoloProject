@@ -54,14 +54,20 @@ nav a:hover {
 /* Makes the header larger then other headers */
 
 h1 {
-    font-size:300%;
+    font-size: 300%;
+    padding-top: 20px;
+    text-align: center;
 }
 
 h2 {
     font-size: 200%;
     border-top: 1px solid #000000;
-    padding-top: 20px;
-    
+    padding-top: 20px; 
+    text-align:center;   
+}
+
+h3 {
+    text-align: center;
 }
 
 /* Creates extra spacing between the elements and headers */
@@ -113,3 +119,25 @@ justify-content: space-between;
     margin: 10px;
 }
 
+#social-media-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#social-media-links li {
+    margin-right: 10px;
+    font-size: 125%;
+}
+
+#social-media-links li img {
+    padding-left: 10px;
+    max-width: 20%;
+    max-height: 100%;
+}
+
+footer {
+    border-top: 2px solid #000000;
+    text-align:center;
+}
