@@ -1,9 +1,12 @@
+/* Sets the default margin, padding, and box-sizing propertires for all HTML elements. */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
+  /* Sets the height off all HTML Elements */
 html {
     height: 100%;
 }
@@ -16,7 +19,7 @@ body {
     color:white;
 }
 
-/* Sets Gradient color of Nav Bar. */
+/* Sets the overflow, border, and positioning for the NAV bar. */
 
 nav {
     
@@ -26,8 +29,7 @@ nav {
     border-bottom: solid;
 }
 
-/* Modifies the links for the Navigation Bar*/
-
+/* Sets all the links into a row with even spacing in the nav bar */
 nav ul{
     display: flex;
     justify-content: center;
@@ -40,7 +42,7 @@ nav li{
     margin: 0 10px;
 }
 
-/* Utilize to adjust the speed of the "pop out" and color of the links when hovered over */
+/* Adjusts the speed of the "pop out" and color of the links when hovered over */
 
 nav a {
     display: block;
@@ -50,6 +52,7 @@ nav a {
     transition: all 0.3s ease-in-out;
 }
 
+/* Modifies how large the links grow on hover and the color they transition too. */
 nav a:hover {
     color: yellow;
     transform:scale(1.2)
@@ -59,7 +62,7 @@ a:visited {
     color:blue;
 }
 
-/* Makes the header larger then other headers */
+/* This block Styles the headers for the page.*/
 
 h1 {
     font-size: 300%;
@@ -71,15 +74,18 @@ h2 {
     font-size: 250%;
     border-top: 1px solid;
     padding-top: 20px; 
-    text-align:center;   
+    text-align:center;
+    font-style:italic;   
 }
 
 h3 {
     text-align: center;
     font-size:150%;
+    font-style:italic;
 }
 
-/* Creates extra spacing between the elements and headers */
+/* Creates extra spacing between the elements and headers.
+Adds a border to each header and changes he header's colors.*/
 
 h1, h2, h3 {
     padding-left: 20px;
@@ -88,9 +94,7 @@ h1, h2, h3 {
     border-color: white;
 }
 
-h2, h3 {
-    font-style: italic;
-}
+/* Creates extra spacing between sentances and paragraphs. */
 
 p {
     text-indent: 20px;
@@ -104,9 +108,7 @@ p {
     display:flex;
 }
 
-#img-box {
-outline: 2px; white;
-}
+/* Places all 4 pargaraphs into a column and centered to the left of the Profile image. */
 
 .text-box {
     display: flex;
@@ -115,6 +117,8 @@ outline: 2px; white;
     align-items: flex-start;
     margin-left: 20px;
 }
+
+/* Changes the font size of the Paragraphs for the About Me section */
 
 .about-size {
     font-size: 150%;
@@ -128,15 +132,20 @@ justify-content: center;
 margin-bottom: 2%;
 }
 
+/* Modifies the "Shadow" around the 1st project image as well as the color. */
 #accessibility {
     border-radius: 50%;
     box-shadow: 8px 8px 20px black;
     transition: all 0.3s ease-in-out;
 }
 
+/* Change how large the image grows on hover. */
+
 #accessibility:hover {
     transform:scale(1.1);
 }
+
+/* creates a flex box containing the 2 project images per row and centers them. */
 
 .project-rows {
     display: flex;
@@ -145,12 +154,13 @@ margin-bottom: 2%;
     padding-bottom: 2%;
 }
 
+/* Modifies the "Shadow" on the project pictures and adjust the transition speed */
 .project-img {
     border-radius: 50%;
     box-shadow: 4px 4px 10px black;
     transition: all 0.3s ease-in-out;
 }
-
+/* Adds a *Pop Out* effect on hover */
 .project-img:hover {
     transform:scale(1.1);
 }
@@ -173,8 +183,105 @@ margin-bottom: 2%;
     max-height: 100%;
 }
 
+/* Border, color, and text align property for the footer */
 footer {
     border-top: 2px solid;
     border-color: white;
     text-align:center;
+}
+
+/* CSS rules for tablet-sized screens */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    nav a {
+      font-size: 200%;
+    }
+  
+    .text-box {
+      margin-left: 10px;
+    }
+  
+    .project-img {
+      max-width: 60%;
+    }
+  
+    #social-media-links li img {
+      max-width: 15%;
+    }
+  
+    h1, h2, h3 {
+      font-size: 250%;
+    }
+  
+    p {
+      font-size: 120%;
+    }
+  }
+
+/* CSS style for Smart Phones */
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav li {
+      margin: 10px 0;
+    }
+  
+    nav a {
+      font-size: 200%;
+    }
+  
+    .container {
+      flex-direction: column;
+      justify-content:center;
+      align-items: center;
+    }
+  
+    .text-box {
+      margin: 20px 0;
+      align-items: center;
+    }
+  
+    .about-size {
+      font-size: 120%;
+      text-align: center;
+    }
+  
+    .container-projects {
+      flex-direction: column;
+    }
+
+    #accessibility {
+        width: 300px;
+        height: 300px;
+    }
+  
+    .project-rows {
+      justify-content: center;
+    }
+  
+    .project-img {
+      margin-bottom: 20px;
+    }
+  
+    #social-media-links {
+        flex-direction: column;
+        justify-content: center;
+    }
+  
+    #social-media-links li {
+      margin-right: 20px;
+    }
+  
+    #social-media-links li img {
+      max-width: 15%;
+    }
+
+    footer {
+        position: static;
+        margin-top: 20px;
+      }
 }
