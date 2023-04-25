@@ -8,18 +8,22 @@ html {
     height: 100%;
 }
 
+/* Sets the font and background color for the entire page. */
 body {
     min-height: 100%;
+    background-color:rgb(32, 27, 44);
     font-family: Papyrus, fantasy;
+    color:white;
 }
 
 /* Sets Gradient color of Nav Bar. */
 
 nav {
-    background: linear-gradient(To bottom, rgb(219, 12, 219), rgb(150, 71, 150), rgb(94, 74, 94));
+    
     overflow: hidden;
     justify-content: center;
     align-items: center;
+    border-bottom: solid;
 }
 
 /* Modifies the links for the Navigation Bar*/
@@ -40,7 +44,7 @@ nav li{
 
 nav a {
     display: block;
-    color: #1ed1b3;
+    color: blue;
     font-size: 300%;
     padding: 14px 16px;
     transition: all 0.3s ease-in-out;
@@ -49,6 +53,10 @@ nav a {
 nav a:hover {
     color: yellow;
     transform:scale(1.2)
+}
+
+a:visited {
+    color:blue;
 }
 
 /* Makes the header larger then other headers */
@@ -61,13 +69,14 @@ h1 {
 
 h2 {
     font-size: 250%;
-    border-top: 1px solid #000000;
+    border-top: 1px solid;
     padding-top: 20px; 
     text-align:center;   
 }
 
 h3 {
     text-align: center;
+    font-size:150%;
 }
 
 /* Creates extra spacing between the elements and headers */
@@ -75,6 +84,8 @@ h3 {
 h1, h2, h3 {
     padding-left: 20px;
     padding-bottom: 20px;
+    color: #975cf5;
+    border-color: white;
 }
 
 h2, h3 {
@@ -91,24 +102,18 @@ p {
 
 .container {
     display:flex;
-    flex-wrap: nowrap;
 }
 
 #img-box {
-    flex: 0 0 10%;
-    margin-right: 1rem;
-    margin-left: 10px;
-}
-
-#img-box img {
-    max-width: 100%;
-    height: auto;
+outline: 2px; white;
 }
 
 .text-box {
-    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px;
 }
 
 .about-size {
@@ -123,15 +128,31 @@ justify-content: center;
 margin-bottom: 2%;
 }
 
+#accessibility {
+    border-radius: 50%;
+    box-shadow: 8px 8px 20px black;
+    transition: all 0.3s ease-in-out;
+}
+
+#accessibility:hover {
+    transform:scale(1.1);
+}
+
 .project-rows {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding-bottom: 2%;
 }
 
-.project-rows img {
-    max-width: 100%;
-    max-height: 100%;
+.project-img {
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px black;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-img:hover {
+    transform:scale(1.1);
 }
 
 #social-media-links {
@@ -153,6 +174,7 @@ margin-bottom: 2%;
 }
 
 footer {
-    border-top: 2px solid #000000;
+    border-top: 2px solid;
+    border-color: white;
     text-align:center;
 }
