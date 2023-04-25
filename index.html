@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
   </head>
-
+  
   <body>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#about-me">About Me</a></li>
         <li><a href="#my-work">My Work</a></li>
         <li><a href="#contact-me">Contact Me</a></li>
@@ -20,46 +20,58 @@
     <header>
       <h1>PORTFOLIO</h1>
     </header>
-
-    <section>
-          <img id="me" src="./assets/images/ashtree.jpg" alt="Place Holder for my picture" title="It's Me!">
-    </section>
-
-    <content>
-        <h2 id="about-me">About Me</h2>
-          <p>Welcome to my site! My name is Holden Melander, and I am a small business owner based in Lakewood, Washington.</p>
-          <p>I have a Bachelor's degree in Business Management from Brigham Young University with an Emphasis in Enterpernual Management. I have had the opportunity to work for 
-            various companies in the retail field, including Walmart, Staples, and 20/20 events in Utah. I have owned a franchise with 20 employees for the past two years.</p>
-          <p>My business skills include team leadership, sales strategy, inventory management, and customer service. I am passionate about driving sales by building strong relations 
-            with my clientele and the local community.</p>
-          <p>Outside work, I enjoy reading good fantasy novels, playing obscure board games, and spending time with my family.</p>
-          <p id="padding">If you are interested in connecting or learning more about my work, feel free to contact me through one of the contact methods below.</p>
-    </content>
     
-    <content>
+    <h2 id="about-me">About Me</h2>
+    
+
+    <section class="container">
+      <div>
+      <img src="./assets/images/profilepicture2.jpg" alt="My Profile Picture" title="It's Me!" style="outline: 2px solid; margin-left:2px;">
+      </div>
+      <content class="text-box">
+          <p class="about-size">Welcome to my site! My name is Holden Melander, and I am a small business owner based in Lakewood, Washington.
+          I have a Bachelor's degree in Business Management from Brigham Young University with an Emphasis in Enterpernual Management. I have had the opportunity to work for 
+            various companies in the retail field, including Walmart, Staples, and 20/20 events in Utah. I have owned a franchise with 20 employees for the past two years. </p>
+          <p class="about-size">My business skills include team leadership, sales strategy, inventory management, and customer service. I am passionate about driving sales by building strong relations 
+            with my clientele and the local community. Outside work, I enjoy reading good fantasy novels, playing obscure board games, and spending time with my family. </p>
+          <p class="about-size">If you are interested in connecting or learning more about my work, feel free to contact me through one of the contact methods below.</p>
+      </content>
+    </section>
+    
       <h2 id="my-work">My Work</h2>
-        <div class="projects">
+
+    <content>
+      <h3>Project 1</h3>
+      <div class="container-projects">
         <div>
-          <h3>Project 1</h3>
-          <img src="assets/images/ashtree.jpg" alt="Project 1" Title="Project 1" class="odd">
+          <a href="https://essence1987.github.io/SSServices/">
+          <img id="accessibility" src="assets/images/accessibility.png" alt="Project 1" Title="Project 1"></a>
         </div>
+      </div>
+      <div class="project-rows">
         <div>
           <h3>Project 2</h3>
-          <img src="assets/images/ashtree.jpg" alt="Project 1" Title="Project 1" class="even" >
+          <img class= "project-img" src="assets/images/ashtree.jpg" alt="Project 2" Title="Project 2" >
         </div>
         <div>
           <h3>Project 3</h3>
-          <img src="assets/images/ashtree.jpg" alt="Project 1" Title="Project 1" class="odd">
+          <img class = "project-img" src="assets/images/ashtree.jpg" alt="Project 3" Title="Project 3">
         </div>
+      </div>
+      <div class="project-rows">
         <div>
           <h3>Project 4</h3>
-          <img src="assets/images/ashtree.jpg" alt="Project 1" Title="Project 1" class="even">
+          <img class="project-img" src="assets/images/ashtree.jpg" alt="Project 4" Title="Project 4">
         </div>
+        <div>
+          <h3>Project 5</h3>
+          <img class="project-img" src="assets/images/ashtree.jpg" alt="Project 5" Title="Project 5">
         </div>
+      </div>
     </content>
     
     <Content>
-      <h2>Contact Me</h4>
+      <h2 id="contact-me">Contact Me</h4>
         <div>
           <ul id="social-media-links">
             <li><a href="phone"><img src="./assets/images/phone-call.png" alt="Phone">999.999.9999</a></li>
