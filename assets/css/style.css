@@ -167,18 +167,18 @@ margin-bottom: 2%;
 
 #social-media-links {
     display: flex;
+    justify-content: center;
+    align-items:center;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 #social-media-links li {
-    margin-right: 10px;
     font-size: 125%;
 }
 
 #social-media-links li img {
-    padding-left: 10px;
     max-width: 20%;
     max-height: 100%;
 }
